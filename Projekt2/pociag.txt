@@ -1,0 +1,20 @@
+Nazwa pociagu:  Moniuszko
+Rok produkcji pociagu:  2000
+Liczba pracownikow:  3
+Liczba wagonow:  9
+Poczatek trasy:  Poznan 
+Koniec trasy:  Warszawa
+Dlugosc trasy:  310
+Czas przejazdu w minutach:  200
+Imie i Nazwisko pracownika:  Joanna Ostrowska
+zawod:  maszynista
+zarobki:  2500
+
+Imie i Nazwisko pracownika:  Tomasz Kono
+zawod:  konduktor
+zarobki:  2000
+
+Imie i Nazwisko pracownika:  Michal Kowalik
+zawod:  konduktor
+zarobki:  2000
+

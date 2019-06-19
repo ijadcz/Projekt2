@@ -1,0 +1,195 @@
+\section{Trasa Class Reference}
+\label{class_trasa}\index{Trasa@{Trasa}}
+
+
+Klasa \doxyref{Trasa}{p.}{class_trasa}, podklasa klasy \doxyref{Pociag}{p.}{class_pociag}.  
+
+
+
+
+{\ttfamily \#include $<$trasa.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Trasa} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Trasa} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+void \textbf{ wypis\+Danych\+Trasy} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wypisująca informacje o trasie. \end{DoxyCompactList}\item 
+void \textbf{ dodaj\+Dane\+Trasy} (string poczatek\+\_\+t, string koniec\+\_\+t, int czas\+\_\+przejazdu, int dlugosc\+\_\+t)
+\item 
+void \textbf{ dodaj\+Opoznienie} (int opoznienie)
+\item 
+void \textbf{ zapisz} (\textbf{ Trasa} \&trasa)
+\item 
+void \textbf{ wczytaj} (\textbf{ Trasa} \&trasa)
+\item 
+bool \textbf{ operator$>$} (const \textbf{ Trasa} \&t)
+\begin{DoxyCompactList}\small\item\em Operator $>$ \end{DoxyCompactList}\item 
+bool \textbf{ operator$<$} (const \textbf{ Trasa} \&t)
+\begin{DoxyCompactList}\small\item\em Operator $<$. \end{DoxyCompactList}\item 
+\textbf{ Trasa} \textbf{ operator+} (const \textbf{ Trasa} \&t)
+\begin{DoxyCompactList}\small\item\em Operator +. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \textbf{ operator$<$$<$} (ostream \&s, \textbf{ Trasa} \&t)
+\begin{DoxyCompactList}\small\item\em Operator strumieniowy $<$$<$. \end{DoxyCompactList}\item 
+istream \& \textbf{ operator$>$$>$} (istream \&s, \textbf{ Trasa} \&t)
+\begin{DoxyCompactList}\small\item\em Operator strumieniowy $>$$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa \doxyref{Trasa}{p.}{class_trasa}, podklasa klasy \doxyref{Pociag}{p.}{class_pociag}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_trasa_a5f18e484a5335c0f5f7d030ca984717f}} 
+\index{Trasa@{Trasa}!Trasa@{Trasa}}
+\index{Trasa@{Trasa}!Trasa@{Trasa}}
+\subsubsection{Trasa()}
+{\footnotesize\ttfamily Trasa\+::\+Trasa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyślny. 
+
+\mbox{\label{class_trasa_a42ba4ee49a8937f527d5fd5a9971434c}} 
+\index{Trasa@{Trasa}!````~Trasa@{$\sim$\+Trasa}}
+\index{````~Trasa@{$\sim$\+Trasa}!Trasa@{Trasa}}
+\subsubsection{$\sim$\+Trasa()}
+{\footnotesize\ttfamily Trasa\+::$\sim$\+Trasa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_trasa_a3b0aa4c583d8fd0902ad88f645249c02}} 
+\index{Trasa@{Trasa}!dodaj\+Dane\+Trasy@{dodaj\+Dane\+Trasy}}
+\index{dodaj\+Dane\+Trasy@{dodaj\+Dane\+Trasy}!Trasa@{Trasa}}
+\subsubsection{dodaj\+Dane\+Trasy()}
+{\footnotesize\ttfamily void Trasa\+::dodaj\+Dane\+Trasy (\begin{DoxyParamCaption}\item[{string}]{poczatek\+\_\+t,  }\item[{string}]{koniec\+\_\+t,  }\item[{int}]{czas\+\_\+przejazdu,  }\item[{int}]{dlugosc\+\_\+t }\end{DoxyParamCaption})}
+
+Funkcja dodająca dane o trasie Jako parametry przyjmuje początek i koniec trasy, czas przejazdu i długość trasy 
+\begin{DoxyParams}{Parameters}
+{\em poczatek\+\_\+t} & określa początek trasy pociągu \\
+\hline
+{\em koniec\+\_\+t} & określa koniec trasy pociągu \\
+\hline
+{\em czas\+\_\+przejazdu} & określa czas przejazdu pociągu \\
+\hline
+{\em dlugosc\+\_\+t} & określa długość trasy w kilometrach \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca żadnej wartości 
+\end{DoxyReturn}
+\mbox{\label{class_trasa_a6e7959bcac1db9c4116f990676a12e65}} 
+\index{Trasa@{Trasa}!dodaj\+Opoznienie@{dodaj\+Opoznienie}}
+\index{dodaj\+Opoznienie@{dodaj\+Opoznienie}!Trasa@{Trasa}}
+\subsubsection{dodaj\+Opoznienie()}
+{\footnotesize\ttfamily void Trasa\+::dodaj\+Opoznienie (\begin{DoxyParamCaption}\item[{int}]{opoznienie }\end{DoxyParamCaption})}
+
+Funkcja dodająca opóźnienie na trasie Jako parametr przyjmuje długość opóźnienia w minutach 
+\begin{DoxyParams}{Parameters}
+{\em opoznienie} & określa długość opóźniena pociągu w minutach \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca żadnej wartości 
+\end{DoxyReturn}
+\mbox{\label{class_trasa_a562c8e38ff046b57d6ea5e60ec598e51}} 
+\index{Trasa@{Trasa}!operator+@{operator+}}
+\index{operator+@{operator+}!Trasa@{Trasa}}
+\subsubsection{operator+()}
+{\footnotesize\ttfamily \textbf{ Trasa} Trasa\+::operator+ (\begin{DoxyParamCaption}\item[{const \textbf{ Trasa} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Operator +. 
+
+\mbox{\label{class_trasa_a23b4e087865aef23f45c21c21ef5ccdd}} 
+\index{Trasa@{Trasa}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Trasa@{Trasa}}
+\subsubsection{operator$<$()}
+{\footnotesize\ttfamily bool Trasa\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \textbf{ Trasa} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Operator $<$. 
+
+\mbox{\label{class_trasa_a942b3732d4814ad0764f964e0282d216}} 
+\index{Trasa@{Trasa}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Trasa@{Trasa}}
+\subsubsection{operator$>$()}
+{\footnotesize\ttfamily bool Trasa\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \textbf{ Trasa} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Operator $>$ 
+
+\mbox{\label{class_trasa_a2283be5d0139fd35a9cd0e40eb6ede1b}} 
+\index{Trasa@{Trasa}!wczytaj@{wczytaj}}
+\index{wczytaj@{wczytaj}!Trasa@{Trasa}}
+\subsubsection{wczytaj()}
+{\footnotesize\ttfamily void Trasa\+::wczytaj (\begin{DoxyParamCaption}\item[{\textbf{ Trasa} \&}]{trasa }\end{DoxyParamCaption})}
+
+Funkcja wczytująca obiekt z pliku Jako parametr przyjmuje obiekt trasa i wczytuje do niego informacje z pliku 
+\begin{DoxyParams}{Parameters}
+{\em trasa} & określa pociag do którego wczytujemy dane \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_trasa_a3e3d0447d1bff7a8798f52d28dc414d8}} 
+\index{Trasa@{Trasa}!wypis\+Danych\+Trasy@{wypis\+Danych\+Trasy}}
+\index{wypis\+Danych\+Trasy@{wypis\+Danych\+Trasy}!Trasa@{Trasa}}
+\subsubsection{wypis\+Danych\+Trasy()}
+{\footnotesize\ttfamily void Trasa\+::wypis\+Danych\+Trasy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja wypisująca informacje o trasie. 
+
+\mbox{\label{class_trasa_a81f175a914fd02eaf6019696a79d7785}} 
+\index{Trasa@{Trasa}!zapisz@{zapisz}}
+\index{zapisz@{zapisz}!Trasa@{Trasa}}
+\subsubsection{zapisz()}
+{\footnotesize\ttfamily void Trasa\+::zapisz (\begin{DoxyParamCaption}\item[{\textbf{ Trasa} \&}]{trasa }\end{DoxyParamCaption})}
+
+Funkcja zapisująca trase do pliku Jako parametr przyjmuje obiekt trase i zapisuje informacje o niej do pliku 
+\begin{DoxyParams}{Parameters}
+{\em trasa} & określa trase, której dane zapisujemy \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\label{class_trasa_a546eedc44ac2ff4fcf2d361a8f08d9b0}} 
+\index{Trasa@{Trasa}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Trasa@{Trasa}}
+\subsubsection{operator$<$$<$}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{s,  }\item[{\textbf{ Trasa} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator strumieniowy $<$$<$. 
+
+\mbox{\label{class_trasa_ad5f6762bbed1b1cf1bf3c1c647830346}} 
+\index{Trasa@{Trasa}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Trasa@{Trasa}}
+\subsubsection{operator$>$$>$}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{s,  }\item[{\textbf{ Trasa} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator strumieniowy $>$$>$ 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ trasa.\+h}\item 
+\textbf{ trasa.\+cpp}\end{DoxyCompactItemize}

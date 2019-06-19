@@ -1,0 +1,485 @@
+\section{Pociag Class Reference}
+\label{class_pociag}\index{Pociag@{Pociag}}
+
+
+Klasa Pociąg, pochodna klasy \doxyref{Pojazd}{p.}{class_pojazd}.  
+
+
+
+
+{\ttfamily \#include $<$pociag.\+h$>$}
+
+Inheritance diagram for Pociag\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pociag}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Pociag} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny. \end{DoxyCompactList}\item 
+\textbf{ Pociag} (string nazwa\+\_\+p, int \textbf{ rok\+\_\+produkcji}, string \textbf{ kolor}, int liczba\+\_\+w, string poczatek\+\_\+t, string koniec\+\_\+t, int czas\+\_\+przejazdu, int dlugosc\+\_\+t)
+\item 
+\textbf{ $\sim$\+Pociag} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+\textbf{ Pociag} (const \textbf{ Pociag} \&pociag)
+\begin{DoxyCompactList}\small\item\em Konstruktor kopiujący. \end{DoxyCompactList}\item 
+void \textbf{ wyswietl\+Dane} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wirtualna wyświetlająca dane pociągu. \end{DoxyCompactList}\item 
+void \textbf{ dodaj\+Dane\+Pociagu} (string nazwa\+\_\+p, int \textbf{ rok\+\_\+produkcji}, string kolor\+\_\+p, int liczba\+\_\+w, string poczatek\+\_\+t, string koniec\+\_\+t, int czas\+\_\+przejazdu, int dlugosc\+\_\+t)
+\item 
+void \textbf{ zmien\+Nazwe} (string nowa\+\_\+nazwa)
+\item 
+void \textbf{ dodaj\+Pracownika} (string nowy\+\_\+imie\+\_\+nazwisko, string nowy\+\_\+zawod, int nowy\+\_\+zarobki)
+\item 
+void \textbf{ dodaj\+Wagony\+Pociagu} (int ile\+\_\+wagonow\+\_\+pociagu)
+\item 
+void \textbf{ zmien\+Kolor\+Wagonow} (string nowy\+\_\+kolor\+\_\+wagonow)
+\item 
+void \textbf{ zmien\+Kolor} (string nowy\+\_\+kolor\+\_\+pocigu)
+\item 
+void \textbf{ zapisz} (\textbf{ Pociag} \&pociag)
+\item 
+void \textbf{ wczytaj} (\textbf{ Pociag} \&pociag)
+\item 
+bool \textbf{ operator==} (const \textbf{ Pociag} \&p)
+\begin{DoxyCompactList}\small\item\em Operator ==. \end{DoxyCompactList}\item 
+bool \textbf{ operator$>$} (const \textbf{ Pociag} \&p)
+\begin{DoxyCompactList}\small\item\em Operator $>$ \end{DoxyCompactList}\item 
+bool \textbf{ operator$<$} (const \textbf{ Pociag} \&p)
+\begin{DoxyCompactList}\small\item\em Operator $<$. \end{DoxyCompactList}\item 
+\textbf{ Pociag} \& \textbf{ operator=} (const \textbf{ Pociag} \&p)
+\begin{DoxyCompactList}\small\item\em Operator =. \end{DoxyCompactList}\item 
+\textbf{ Pociag} \textbf{ operator+} (const \textbf{ Pociag} \&p)
+\begin{DoxyCompactList}\small\item\em Operator+. \end{DoxyCompactList}\item 
+\textbf{ Pociag} \& \textbf{ operator++} (int)
+\begin{DoxyCompactList}\small\item\em Operator ++. \end{DoxyCompactList}\item 
+\textbf{ Pociag} \& \textbf{ operator-\/-\/} (int)
+\begin{DoxyCompactList}\small\item\em Operator --. \end{DoxyCompactList}\item 
+\textbf{ Pracownik} \& \textbf{ operator[$\,$]} (int i)
+\begin{DoxyCompactList}\small\item\em Operator indeksowy. \end{DoxyCompactList}\item 
+\textbf{ operator int} ()
+\begin{DoxyCompactList}\small\item\em Operator rzutowania. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \textbf{ wyswietl\+Liczbe\+Pociagow} ()
+\begin{DoxyCompactList}\small\item\em metoda statyczna zwracająca liczbe pociągów \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \textbf{ nazwa\+\_\+pociagu}
+\begin{DoxyCompactList}\small\item\em określa nazwe pociągu \end{DoxyCompactList}\item 
+int \textbf{ liczba\+\_\+pracownikow}
+\begin{DoxyCompactList}\small\item\em określa liczbę pracowników w pociągu \end{DoxyCompactList}\item 
+\textbf{ Wagony} \textbf{ wagony}
+\begin{DoxyCompactList}\small\item\em określa wagony pociągu \end{DoxyCompactList}\item 
+vector$<$ \textbf{ Pracownik} $>$ \textbf{ pracownicy}
+\begin{DoxyCompactList}\small\item\em określa pracowników pociągu \end{DoxyCompactList}\item 
+\textbf{ Trasa} \textbf{ trasa}
+\begin{DoxyCompactList}\small\item\em określa trase pociągu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \textbf{ ilosc\+\_\+pociagow} = 0
+\begin{DoxyCompactList}\small\item\em zmienna statyczna przechowująca ilość pociągów \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \textbf{ operator$<$$<$} (ostream \&s, \textbf{ Pociag} \&p)
+\begin{DoxyCompactList}\small\item\em operator strumieniowy $<$$<$ \end{DoxyCompactList}\item 
+istream \& \textbf{ operator$>$$>$} (istream \&s, \textbf{ Pociag} \&p)
+\begin{DoxyCompactList}\small\item\em operator strumieniowy $>$$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa Pociąg, pochodna klasy \doxyref{Pojazd}{p.}{class_pojazd}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_pociag_aa09d236a07401ce066854498eba23712}} 
+\index{Pociag@{Pociag}!Pociag@{Pociag}}
+\index{Pociag@{Pociag}!Pociag@{Pociag}}
+\subsubsection{Pociag()\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Pociag\+::\+Pociag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyślny. 
+
+\mbox{\label{class_pociag_a938af7820cab214b07ce520366663074}} 
+\index{Pociag@{Pociag}!Pociag@{Pociag}}
+\index{Pociag@{Pociag}!Pociag@{Pociag}}
+\subsubsection{Pociag()\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Pociag\+::\+Pociag (\begin{DoxyParamCaption}\item[{string}]{nazwa\+\_\+p,  }\item[{int}]{rok\+\_\+produkcji,  }\item[{string}]{kolor,  }\item[{int}]{liczba\+\_\+w,  }\item[{string}]{poczatek\+\_\+t,  }\item[{string}]{koniec\+\_\+t,  }\item[{int}]{czas\+\_\+przejazdu,  }\item[{int}]{dlugosc\+\_\+t }\end{DoxyParamCaption})}
+
+Konstruktor Jako parametry przyjmuje nową nazwę pociągu, nowy rok produkcji pociągu nowy kolor,nową liczbę wagonów, nowy początek trasy pociągu, nowy koniec trasy pociągu, nowy czas przejazdu pociągu, nową długość trasy w kilometrach 
+\begin{DoxyParams}{Parameters}
+{\em nazwa\+\_\+p} & określa nazwę pociągu \\
+\hline
+{\em rok\+\_\+produkcji} & określa rok produkcji pociągu \\
+\hline
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_pociag_ae45cf91403955fd03ac41ae7c295b4a9}} 
+\index{Pociag@{Pociag}!````~Pociag@{$\sim$\+Pociag}}
+\index{````~Pociag@{$\sim$\+Pociag}!Pociag@{Pociag}}
+\subsubsection{$\sim$\+Pociag()}
+{\footnotesize\ttfamily Pociag\+::$\sim$\+Pociag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor. 
+
+\mbox{\label{class_pociag_aa01d38fb2548b217ae793f32795fb835}} 
+\index{Pociag@{Pociag}!Pociag@{Pociag}}
+\index{Pociag@{Pociag}!Pociag@{Pociag}}
+\subsubsection{Pociag()\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Pociag\+::\+Pociag (\begin{DoxyParamCaption}\item[{const \textbf{ Pociag} \&}]{pociag }\end{DoxyParamCaption})}
+
+
+
+Konstruktor kopiujący. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_pociag_aea1241109c8a6ea3cc8a4cd433021e41}} 
+\index{Pociag@{Pociag}!dodaj\+Dane\+Pociagu@{dodaj\+Dane\+Pociagu}}
+\index{dodaj\+Dane\+Pociagu@{dodaj\+Dane\+Pociagu}!Pociag@{Pociag}}
+\subsubsection{dodaj\+Dane\+Pociagu()}
+{\footnotesize\ttfamily void Pociag\+::dodaj\+Dane\+Pociagu (\begin{DoxyParamCaption}\item[{string}]{nazwa\+\_\+p,  }\item[{int}]{rok\+\_\+produkcji,  }\item[{string}]{kolor\+\_\+p,  }\item[{int}]{liczba\+\_\+w,  }\item[{string}]{poczatek\+\_\+t,  }\item[{string}]{koniec\+\_\+t,  }\item[{int}]{czas\+\_\+przejazdu,  }\item[{int}]{dlugosc\+\_\+t }\end{DoxyParamCaption})}
+
+Procedura zmieniająca dane pociągu. Jako parametry przyjmuje nową nazwę pociągu, nowy rok produkcji pociągu,nowy kolor pociągu, nową liczbę wagonów, nowy początek trasy pociągu, nowy koniec trasy pociągu, nowy czas przejazdu pociągu, nową długość trasy w kilometrach 
+\begin{DoxyParams}{Parameters}
+{\em nazwa\+\_\+p} & określa nazwę pociągu \\
+\hline
+{\em rok\+\_\+produkcji} & określa rok produkcji pociągu \\
+\hline
+{\em kolor\+\_\+p} & określa nowy kolor pociągu \\
+\hline
+{\em liczba\+\_\+w} & określa liczbę wagonów \\
+\hline
+{\em poczatek\+\_\+t} & określa początek trasy pociągu \\
+\hline
+{\em koniec\+\_\+t} & określa koniec trasy pociągu \\
+\hline
+{\em czas\+\_\+przejazdu} & określa czas przejazdu pociągu \\
+\hline
+{\em dlugosc\+\_\+t} & określa długość trasy w kilometrach \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca żadnej wartości 
+\end{DoxyReturn}
+\mbox{\label{class_pociag_af4eadc978c7779c832da7ad4fe2bc86f}} 
+\index{Pociag@{Pociag}!dodaj\+Pracownika@{dodaj\+Pracownika}}
+\index{dodaj\+Pracownika@{dodaj\+Pracownika}!Pociag@{Pociag}}
+\subsubsection{dodaj\+Pracownika()}
+{\footnotesize\ttfamily void Pociag\+::dodaj\+Pracownika (\begin{DoxyParamCaption}\item[{string}]{nowy\+\_\+imie\+\_\+nazwisko,  }\item[{string}]{nowy\+\_\+zawod,  }\item[{int}]{nowy\+\_\+zarobki }\end{DoxyParamCaption})}
+
+Funkcja dodająca pracownika. Jako parametry podawane są\+: imię i nazwisko, zawód, zarobki 
+\begin{DoxyParams}{Parameters}
+{\em nowy\+\_\+imie\+\_\+nazwisko} & określa imie i nazwisko pracownika \\
+\hline
+{\em nowy\+\_\+zawod} & określa zawód pracownika \\
+\hline
+{\em nowy\+\_\+zarobki} & określa zarobki pracownika \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca żadnej wartości 
+\end{DoxyReturn}
+\mbox{\label{class_pociag_ae0f8e4d7f079baf9ac4f72688cc414e3}} 
+\index{Pociag@{Pociag}!dodaj\+Wagony\+Pociagu@{dodaj\+Wagony\+Pociagu}}
+\index{dodaj\+Wagony\+Pociagu@{dodaj\+Wagony\+Pociagu}!Pociag@{Pociag}}
+\subsubsection{dodaj\+Wagony\+Pociagu()}
+{\footnotesize\ttfamily void Pociag\+::dodaj\+Wagony\+Pociagu (\begin{DoxyParamCaption}\item[{int}]{ile\+\_\+wagonow\+\_\+pociagu }\end{DoxyParamCaption})}
+
+Funckcja dodająca wagony do pociągu. Jako parametr podawana jest liczba wagonów, które chce sie dołączyć do pojazdu 
+\begin{DoxyParams}{Parameters}
+{\em ile\+\_\+wagonow\+\_\+pociagu} & określa liczbe wagonów \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca żadnej wartości 
+\end{DoxyReturn}
+\mbox{\label{class_pociag_a358e8b9db75dd92378892f2df39cf4bf}} 
+\index{Pociag@{Pociag}!operator int@{operator int}}
+\index{operator int@{operator int}!Pociag@{Pociag}}
+\subsubsection{operator int()}
+{\footnotesize\ttfamily Pociag\+::operator int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Operator rzutowania. 
+
+\begin{DoxyReturn}{Returns}
+Zwraca liczbe pracowników pociągu 
+\end{DoxyReturn}
+\mbox{\label{class_pociag_a172506e48bebd907ef5a8fb5f78347e2}} 
+\index{Pociag@{Pociag}!operator+@{operator+}}
+\index{operator+@{operator+}!Pociag@{Pociag}}
+\subsubsection{operator+()}
+{\footnotesize\ttfamily \textbf{ Pociag} Pociag\+::operator+ (\begin{DoxyParamCaption}\item[{const \textbf{ Pociag} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Operator+. 
+
+\mbox{\label{class_pociag_a4d9a774fa5595057108c11795e01b2fd}} 
+\index{Pociag@{Pociag}!operator++@{operator++}}
+\index{operator++@{operator++}!Pociag@{Pociag}}
+\subsubsection{operator++()}
+{\footnotesize\ttfamily \textbf{ Pociag} \& Pociag\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+Operator ++. 
+
+\mbox{\label{class_pociag_afec73939f666119863b4b10f2bf64c34}} 
+\index{Pociag@{Pociag}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Pociag@{Pociag}}
+\subsubsection{operator-\/-\/()}
+{\footnotesize\ttfamily \textbf{ Pociag} \& Pociag\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+Operator --. 
+
+\mbox{\label{class_pociag_a8c6e9316d42b86dfb627c30a9ab1a771}} 
+\index{Pociag@{Pociag}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Pociag@{Pociag}}
+\subsubsection{operator$<$()}
+{\footnotesize\ttfamily bool Pociag\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \textbf{ Pociag} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Operator $<$. 
+
+\mbox{\label{class_pociag_afe13aa599592fc51dab54f1faefbcd89}} 
+\index{Pociag@{Pociag}!operator=@{operator=}}
+\index{operator=@{operator=}!Pociag@{Pociag}}
+\subsubsection{operator=()}
+{\footnotesize\ttfamily \textbf{ Pociag} \& Pociag\+::operator= (\begin{DoxyParamCaption}\item[{const \textbf{ Pociag} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Operator =. 
+
+\mbox{\label{class_pociag_aaeaf319bfca975314c3b9413423180aa}} 
+\index{Pociag@{Pociag}!operator==@{operator==}}
+\index{operator==@{operator==}!Pociag@{Pociag}}
+\subsubsection{operator==()}
+{\footnotesize\ttfamily bool Pociag\+::operator== (\begin{DoxyParamCaption}\item[{const \textbf{ Pociag} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Operator ==. 
+
+\mbox{\label{class_pociag_a5b1746f109f0baf0ee68ca3e9ef2ef37}} 
+\index{Pociag@{Pociag}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Pociag@{Pociag}}
+\subsubsection{operator$>$()}
+{\footnotesize\ttfamily bool Pociag\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \textbf{ Pociag} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Operator $>$ 
+
+\mbox{\label{class_pociag_aff28f36ce1d39a760b0b5da595921f4a}} 
+\index{Pociag@{Pociag}!operator[]@{operator[]}}
+\index{operator[]@{operator[]}!Pociag@{Pociag}}
+\subsubsection{operator[]()}
+{\footnotesize\ttfamily \textbf{ Pracownik} \& Pociag\+::operator[$\,$] (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Operator indeksowy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & oznacza numer pracownika \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zwraca pracownika o danym numerze 
+\end{DoxyReturn}
+\mbox{\label{class_pociag_adbcfb0b338e89e19e148e3aa97ba3fe5}} 
+\index{Pociag@{Pociag}!wczytaj@{wczytaj}}
+\index{wczytaj@{wczytaj}!Pociag@{Pociag}}
+\subsubsection{wczytaj()}
+{\footnotesize\ttfamily void Pociag\+::wczytaj (\begin{DoxyParamCaption}\item[{\textbf{ Pociag} \&}]{pociag }\end{DoxyParamCaption})}
+
+Funkcja wczytująca obiekt z pliku Jako parametr przyjmuje obiekt pociąg i wczytuje do niego informacje z pliku 
+\begin{DoxyParams}{Parameters}
+{\em pociag} & określa pociag do którego wczytujemy dane \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_pociag_a1096a05d2981c1da0ac50870d37c1ffb}} 
+\index{Pociag@{Pociag}!wyswietl\+Dane@{wyswietl\+Dane}}
+\index{wyswietl\+Dane@{wyswietl\+Dane}!Pociag@{Pociag}}
+\subsubsection{wyswietl\+Dane()}
+{\footnotesize\ttfamily void Pociag\+::wyswietl\+Dane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Funkcja wirtualna wyświetlająca dane pociągu. 
+
+
+
+Implements \textbf{ Pojazd} \doxyref{}{p.}{class_pojazd_a945485210fbea0be179644bd68863304}.
+
+\mbox{\label{class_pociag_a30c319e65a8d40e36925ba16a44700bb}} 
+\index{Pociag@{Pociag}!wyswietl\+Liczbe\+Pociagow@{wyswietl\+Liczbe\+Pociagow}}
+\index{wyswietl\+Liczbe\+Pociagow@{wyswietl\+Liczbe\+Pociagow}!Pociag@{Pociag}}
+\subsubsection{wyswietl\+Liczbe\+Pociagow()}
+{\footnotesize\ttfamily static int Pociag\+::wyswietl\+Liczbe\+Pociagow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+metoda statyczna zwracająca liczbe pociągów 
+
+\mbox{\label{class_pociag_a49faf5fc94d3622ce3ce9717e4f0de3b}} 
+\index{Pociag@{Pociag}!zapisz@{zapisz}}
+\index{zapisz@{zapisz}!Pociag@{Pociag}}
+\subsubsection{zapisz()}
+{\footnotesize\ttfamily void Pociag\+::zapisz (\begin{DoxyParamCaption}\item[{\textbf{ Pociag} \&}]{pociag }\end{DoxyParamCaption})}
+
+Funkcja zapisująca pociąg do pliku Jako parametr przyjmuje obiekt pociąg i zapisuje informacje o nim do pliku 
+\begin{DoxyParams}{Parameters}
+{\em pociag} & określa pociag którego dane zapisujemy \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_pociag_a5645f7c8f4019124e63e41444b6893b4}} 
+\index{Pociag@{Pociag}!zmien\+Kolor@{zmien\+Kolor}}
+\index{zmien\+Kolor@{zmien\+Kolor}!Pociag@{Pociag}}
+\subsubsection{zmien\+Kolor()}
+{\footnotesize\ttfamily void Pociag\+::zmien\+Kolor (\begin{DoxyParamCaption}\item[{string}]{nowy\+\_\+kolor\+\_\+pocigu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Funckcja wirtualna zmieniająca kolor pociągu . Jako parametr podawany jest nowy kolor pociągu /param nowy\+\_\+kolor określa kolor pociągu /return Funkcja nie zwraca żadnej wartości 
+
+Implements \textbf{ Pojazd} \doxyref{}{p.}{class_pojazd_a29cab7cc8f5b4b3faed884f0d2849f4f}.
+
+\mbox{\label{class_pociag_a02e5effbee4eb32de3e1099a72e1cba0}} 
+\index{Pociag@{Pociag}!zmien\+Kolor\+Wagonow@{zmien\+Kolor\+Wagonow}}
+\index{zmien\+Kolor\+Wagonow@{zmien\+Kolor\+Wagonow}!Pociag@{Pociag}}
+\subsubsection{zmien\+Kolor\+Wagonow()}
+{\footnotesize\ttfamily void Pociag\+::zmien\+Kolor\+Wagonow (\begin{DoxyParamCaption}\item[{string}]{nowy\+\_\+kolor\+\_\+wagonow }\end{DoxyParamCaption})}
+
+Funckcja zmieniająca kolor wagonów . Jako parametr podawany jest nowy kolor wagonów 
+\begin{DoxyParams}{Parameters}
+{\em nowy\+\_\+kolor\+\_\+wagonow} & określa kolor wagonów \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca żadnej wartości 
+\end{DoxyReturn}
+\mbox{\label{class_pociag_a6c0758995a78c594f122201c949ae06c}} 
+\index{Pociag@{Pociag}!zmien\+Nazwe@{zmien\+Nazwe}}
+\index{zmien\+Nazwe@{zmien\+Nazwe}!Pociag@{Pociag}}
+\subsubsection{zmien\+Nazwe()}
+{\footnotesize\ttfamily void Pociag\+::zmien\+Nazwe (\begin{DoxyParamCaption}\item[{string}]{nowa\+\_\+nazwa }\end{DoxyParamCaption})}
+
+Funkcja zmieniająca nazwe pociągu. Przyjmuje jako parametr nową nazwe pociągu 
+\begin{DoxyParams}{Parameters}
+{\em nowa\+\_\+nazwa} & określa nazwę pociągu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca żadnej wartości 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\label{class_pociag_aa69694c17cdb3e184cc54938668f705c}} 
+\index{Pociag@{Pociag}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Pociag@{Pociag}}
+\subsubsection{operator$<$$<$}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{s,  }\item[{\textbf{ Pociag} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+operator strumieniowy $<$$<$ 
+
+\mbox{\label{class_pociag_a00926731077d7f0d7c1a81c50bee727d}} 
+\index{Pociag@{Pociag}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Pociag@{Pociag}}
+\subsubsection{operator$>$$>$}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{s,  }\item[{\textbf{ Pociag} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+operator strumieniowy $>$$>$ 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{class_pociag_aeb03002f5b8d01ba963c52ed9f946159}} 
+\index{Pociag@{Pociag}!ilosc\+\_\+pociagow@{ilosc\+\_\+pociagow}}
+\index{ilosc\+\_\+pociagow@{ilosc\+\_\+pociagow}!Pociag@{Pociag}}
+\subsubsection{ilosc\+\_\+pociagow}
+{\footnotesize\ttfamily int Pociag\+::ilosc\+\_\+pociagow = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+zmienna statyczna przechowująca ilość pociągów 
+
+\mbox{\label{class_pociag_a15c6cf934080b502f2d8d85643eb8e85}} 
+\index{Pociag@{Pociag}!liczba\+\_\+pracownikow@{liczba\+\_\+pracownikow}}
+\index{liczba\+\_\+pracownikow@{liczba\+\_\+pracownikow}!Pociag@{Pociag}}
+\subsubsection{liczba\+\_\+pracownikow}
+{\footnotesize\ttfamily int Pociag\+::liczba\+\_\+pracownikow\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+określa liczbę pracowników w pociągu 
+
+\mbox{\label{class_pociag_a17321807df7ca8a8808b9845bec610e4}} 
+\index{Pociag@{Pociag}!nazwa\+\_\+pociagu@{nazwa\+\_\+pociagu}}
+\index{nazwa\+\_\+pociagu@{nazwa\+\_\+pociagu}!Pociag@{Pociag}}
+\subsubsection{nazwa\+\_\+pociagu}
+{\footnotesize\ttfamily string Pociag\+::nazwa\+\_\+pociagu\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+określa nazwe pociągu 
+
+\mbox{\label{class_pociag_a0923922692ae0fdc2ed0f2bfcda7d4ce}} 
+\index{Pociag@{Pociag}!pracownicy@{pracownicy}}
+\index{pracownicy@{pracownicy}!Pociag@{Pociag}}
+\subsubsection{pracownicy}
+{\footnotesize\ttfamily vector$<$\textbf{ Pracownik}$>$ Pociag\+::pracownicy\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+określa pracowników pociągu 
+
+\mbox{\label{class_pociag_aae7aabee2f3686fab558e429eac759db}} 
+\index{Pociag@{Pociag}!trasa@{trasa}}
+\index{trasa@{trasa}!Pociag@{Pociag}}
+\subsubsection{trasa}
+{\footnotesize\ttfamily \textbf{ Trasa} Pociag\+::trasa\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+określa trase pociągu 
+
+\mbox{\label{class_pociag_aa54c466523b8bf15b1b7d63fbe37a955}} 
+\index{Pociag@{Pociag}!wagony@{wagony}}
+\index{wagony@{wagony}!Pociag@{Pociag}}
+\subsubsection{wagony}
+{\footnotesize\ttfamily \textbf{ Wagony} Pociag\+::wagony\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+określa wagony pociągu 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ pociag.\+h}\item 
+\textbf{ pociag.\+cpp}\end{DoxyCompactItemize}

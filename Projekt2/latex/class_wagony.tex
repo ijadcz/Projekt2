@@ -1,0 +1,201 @@
+\section{Wagony Class Reference}
+\label{class_wagony}\index{Wagony@{Wagony}}
+
+
+Klasa \doxyref{Wagony}{p.}{class_wagony}, podklasa klasy \doxyref{Pociag}{p.}{class_pociag}.  
+
+
+
+
+{\ttfamily \#include $<$wagony.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Wagony} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Wagony} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+void \textbf{ wypis\+Danych\+Wagonow} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wypisująca dane o wagonach. \end{DoxyCompactList}\item 
+void \textbf{ dodaj\+Dane\+Wagonow} (int liczba\+\_\+w)
+\item 
+void \textbf{ dodaj\+Wagony} (int ile\+\_\+wagonow)
+\item 
+void \textbf{ zapisz} (\textbf{ Wagony} \&wagony)
+\item 
+void \textbf{ wczytaj} (\textbf{ Wagony} \&wagony)
+\item 
+bool \textbf{ operator==} (const \textbf{ Wagony} \&w)
+\begin{DoxyCompactList}\small\item\em Operator ==. \end{DoxyCompactList}\item 
+bool \textbf{ operator$>$} (const \textbf{ Wagony} \&w)
+\begin{DoxyCompactList}\small\item\em Operator $>$ \end{DoxyCompactList}\item 
+bool \textbf{ operator$<$} (const \textbf{ Wagony} \&w)
+\begin{DoxyCompactList}\small\item\em Operator $<$. \end{DoxyCompactList}\item 
+\textbf{ Wagony} \textbf{ operator+} (const \textbf{ Wagony} \&w)
+\begin{DoxyCompactList}\small\item\em Operator +. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \textbf{ operator$<$$<$} (ostream \&s, \textbf{ Wagony} \&w)
+\begin{DoxyCompactList}\small\item\em Operator stumieniowy $<$$<$. \end{DoxyCompactList}\item 
+istream \& \textbf{ operator$>$$>$} (istream \&s, \textbf{ Wagony} \&w)
+\begin{DoxyCompactList}\small\item\em Operator strumieniowy $>$$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa \doxyref{Wagony}{p.}{class_wagony}, podklasa klasy \doxyref{Pociag}{p.}{class_pociag}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_wagony_a6a2b51627882c3dfcc7ede62bc328264}} 
+\index{Wagony@{Wagony}!Wagony@{Wagony}}
+\index{Wagony@{Wagony}!Wagony@{Wagony}}
+\subsubsection{Wagony()}
+{\footnotesize\ttfamily Wagony\+::\+Wagony (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyślny. 
+
+\mbox{\label{class_wagony_a25c4689606486f86836f16a4a96e9a93}} 
+\index{Wagony@{Wagony}!````~Wagony@{$\sim$\+Wagony}}
+\index{````~Wagony@{$\sim$\+Wagony}!Wagony@{Wagony}}
+\subsubsection{$\sim$\+Wagony()}
+{\footnotesize\ttfamily Wagony\+::$\sim$\+Wagony (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_wagony_afbc932d950bda3f21248494c4d7396dc}} 
+\index{Wagony@{Wagony}!dodaj\+Dane\+Wagonow@{dodaj\+Dane\+Wagonow}}
+\index{dodaj\+Dane\+Wagonow@{dodaj\+Dane\+Wagonow}!Wagony@{Wagony}}
+\subsubsection{dodaj\+Dane\+Wagonow()}
+{\footnotesize\ttfamily void Wagony\+::dodaj\+Dane\+Wagonow (\begin{DoxyParamCaption}\item[{int}]{liczba\+\_\+w }\end{DoxyParamCaption})}
+
+Funkcja dodająca dane o wagonach Przyjmuje jako parametr liczbę wagonów 
+\begin{DoxyParams}{Parameters}
+{\em liczba\+\_\+w} & określa liczbę wagonów \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca żadnej wartości 
+\end{DoxyReturn}
+\mbox{\label{class_wagony_adb948fbe49fd7936c74f210502936437}} 
+\index{Wagony@{Wagony}!dodaj\+Wagony@{dodaj\+Wagony}}
+\index{dodaj\+Wagony@{dodaj\+Wagony}!Wagony@{Wagony}}
+\subsubsection{dodaj\+Wagony()}
+{\footnotesize\ttfamily void Wagony\+::dodaj\+Wagony (\begin{DoxyParamCaption}\item[{int}]{ile\+\_\+wagonow }\end{DoxyParamCaption})}
+
+Funkcja zmieniająca liczbe wagonów Jako parametr przyjmuje nowy liczbe wagonów 
+\begin{DoxyParams}{Parameters}
+{\em ile\+\_\+wagonow} & określa liczbe wagonów \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca żadnej wartości 
+\end{DoxyReturn}
+\mbox{\label{class_wagony_a928b5138130f51c7d98bb85fbed9113b}} 
+\index{Wagony@{Wagony}!operator+@{operator+}}
+\index{operator+@{operator+}!Wagony@{Wagony}}
+\subsubsection{operator+()}
+{\footnotesize\ttfamily \textbf{ Wagony} Wagony\+::operator+ (\begin{DoxyParamCaption}\item[{const \textbf{ Wagony} \&}]{w }\end{DoxyParamCaption})}
+
+
+
+Operator +. 
+
+\mbox{\label{class_wagony_a357eae15892590c097f8d775cea3f3bf}} 
+\index{Wagony@{Wagony}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Wagony@{Wagony}}
+\subsubsection{operator$<$()}
+{\footnotesize\ttfamily bool Wagony\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \textbf{ Wagony} \&}]{w }\end{DoxyParamCaption})}
+
+
+
+Operator $<$. 
+
+\mbox{\label{class_wagony_a760a73d7cd21736a9a68c7c841880193}} 
+\index{Wagony@{Wagony}!operator==@{operator==}}
+\index{operator==@{operator==}!Wagony@{Wagony}}
+\subsubsection{operator==()}
+{\footnotesize\ttfamily bool Wagony\+::operator== (\begin{DoxyParamCaption}\item[{const \textbf{ Wagony} \&}]{w }\end{DoxyParamCaption})}
+
+
+
+Operator ==. 
+
+\mbox{\label{class_wagony_a5da51cfa75005428038d0e09d7f2d47f}} 
+\index{Wagony@{Wagony}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Wagony@{Wagony}}
+\subsubsection{operator$>$()}
+{\footnotesize\ttfamily bool Wagony\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \textbf{ Wagony} \&}]{w }\end{DoxyParamCaption})}
+
+
+
+Operator $>$ 
+
+\mbox{\label{class_wagony_a30dff1d362283dfe86061f69c09d4a33}} 
+\index{Wagony@{Wagony}!wczytaj@{wczytaj}}
+\index{wczytaj@{wczytaj}!Wagony@{Wagony}}
+\subsubsection{wczytaj()}
+{\footnotesize\ttfamily void Wagony\+::wczytaj (\begin{DoxyParamCaption}\item[{\textbf{ Wagony} \&}]{wagony }\end{DoxyParamCaption})}
+
+Funkcja wczytująca obiekt z pliku Jako parametr przyjmuje obiekt wagony i wczytuje do niego informacje z pliku 
+\begin{DoxyParams}{Parameters}
+{\em wagony} & określa trase do którego wczytujemy dane \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_wagony_af703b28fadd78b088ae63b0cd56d6be7}} 
+\index{Wagony@{Wagony}!wypis\+Danych\+Wagonow@{wypis\+Danych\+Wagonow}}
+\index{wypis\+Danych\+Wagonow@{wypis\+Danych\+Wagonow}!Wagony@{Wagony}}
+\subsubsection{wypis\+Danych\+Wagonow()}
+{\footnotesize\ttfamily void Wagony\+::wypis\+Danych\+Wagonow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja wypisująca dane o wagonach. 
+
+\mbox{\label{class_wagony_a9cf2b865118b388a0aab4dc28261ffa2}} 
+\index{Wagony@{Wagony}!zapisz@{zapisz}}
+\index{zapisz@{zapisz}!Wagony@{Wagony}}
+\subsubsection{zapisz()}
+{\footnotesize\ttfamily void Wagony\+::zapisz (\begin{DoxyParamCaption}\item[{\textbf{ Wagony} \&}]{wagony }\end{DoxyParamCaption})}
+
+Funkcja wczytująca obiekt z pliku Jako parametr przyjmuje obiekt wagony i wczytuje do niego informacje z pliku 
+\begin{DoxyParams}{Parameters}
+{\em wagony} & określa pociag do którego wczytujemy dane \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\label{class_wagony_a1829f200bc2533d2cc98ec9e17e2174e}} 
+\index{Wagony@{Wagony}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Wagony@{Wagony}}
+\subsubsection{operator$<$$<$}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{s,  }\item[{\textbf{ Wagony} \&}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator stumieniowy $<$$<$. 
+
+\mbox{\label{class_wagony_a55e031de3cc9ab883ab9356fda851f11}} 
+\index{Wagony@{Wagony}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Wagony@{Wagony}}
+\subsubsection{operator$>$$>$}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{s,  }\item[{\textbf{ Wagony} \&}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator strumieniowy $>$$>$ 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ wagony.\+h}\item 
+\textbf{ wagony.\+cpp}\end{DoxyCompactItemize}

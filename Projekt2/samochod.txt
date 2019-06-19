@@ -1,0 +1,5 @@
+Marka: Audi
+Typ :  osobowy
+Rok produkcji:  2010
+Kolor:  czarny
+

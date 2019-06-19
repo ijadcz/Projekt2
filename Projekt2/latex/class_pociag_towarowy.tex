@@ -1,0 +1,162 @@
+\section{Pociag\+Towarowy Class Reference}
+\label{class_pociag_towarowy}\index{Pociag\+Towarowy@{Pociag\+Towarowy}}
+
+
+Klasa \doxyref{Pociag\+Towarowy}{p.}{class_pociag_towarowy}, pochodna klasy \doxyref{Pociag}{p.}{class_pociag}.  
+
+
+
+
+{\ttfamily \#include $<$Pociag towarowy.\+h$>$}
+
+Inheritance diagram for Pociag\+Towarowy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pociag_towarowy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Pociag\+Towarowy} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Pociag\+Towarowy} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+void \textbf{ wyswietl\+Dane} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wirtualna wyświetlająca dane pociągu towarowego. \end{DoxyCompactList}\item 
+void \textbf{ zmien\+Kolor} (string nowy\+\_\+kolor\+\_\+pociagu\+\_\+towarowego)
+\item 
+void \textbf{ dodaj\+Towar} (string nowy\+\_\+rodzaj\+\_\+towaru, int nowa\+\_\+waga\+\_\+towaru\+\_\+w\+\_\+tonach)
+\item 
+void \textbf{ zapisz} (\textbf{ Pociag\+Towarowy} \&pociag)
+\item 
+void \textbf{ odczytaj} (\textbf{ Pociag\+Towarowy} \&pociag)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \textbf{ operator$<$$<$} (ostream \&s, \textbf{ Pociag\+Towarowy} \&p)
+\begin{DoxyCompactList}\small\item\em Operator strumieniowy $<$$<$. \end{DoxyCompactList}\item 
+istream \& \textbf{ operator$>$$>$} (istream \&s, \textbf{ Pociag\+Towarowy} \&p)
+\begin{DoxyCompactList}\small\item\em Operator strumieniowy $>$$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Klasa \doxyref{Pociag\+Towarowy}{p.}{class_pociag_towarowy}, pochodna klasy \doxyref{Pociag}{p.}{class_pociag}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_pociag_towarowy_ade86d8df7d23d1747d7f2a02893eaa25}} 
+\index{Pociag\+Towarowy@{Pociag\+Towarowy}!Pociag\+Towarowy@{Pociag\+Towarowy}}
+\index{Pociag\+Towarowy@{Pociag\+Towarowy}!Pociag\+Towarowy@{Pociag\+Towarowy}}
+\subsubsection{Pociag\+Towarowy()}
+{\footnotesize\ttfamily Pociag\+Towarowy\+::\+Pociag\+Towarowy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyślny. 
+
+\mbox{\label{class_pociag_towarowy_a18b830bad103982b34108498e6fb6e6c}} 
+\index{Pociag\+Towarowy@{Pociag\+Towarowy}!````~Pociag\+Towarowy@{$\sim$\+Pociag\+Towarowy}}
+\index{````~Pociag\+Towarowy@{$\sim$\+Pociag\+Towarowy}!Pociag\+Towarowy@{Pociag\+Towarowy}}
+\subsubsection{$\sim$\+Pociag\+Towarowy()}
+{\footnotesize\ttfamily Pociag\+Towarowy\+::$\sim$\+Pociag\+Towarowy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_pociag_towarowy_a945ec8897f6acbccf30b8c7d04dcafbb}} 
+\index{Pociag\+Towarowy@{Pociag\+Towarowy}!dodaj\+Towar@{dodaj\+Towar}}
+\index{dodaj\+Towar@{dodaj\+Towar}!Pociag\+Towarowy@{Pociag\+Towarowy}}
+\subsubsection{dodaj\+Towar()}
+{\footnotesize\ttfamily void Pociag\+Towarowy\+::dodaj\+Towar (\begin{DoxyParamCaption}\item[{string}]{nowy\+\_\+rodzaj\+\_\+towaru,  }\item[{int}]{nowa\+\_\+waga\+\_\+towaru\+\_\+w\+\_\+tonach }\end{DoxyParamCaption})}
+
+Funckcja dodająca towar . Jako parametry podawany jest rodzaj towaru i jego waga 
+\begin{DoxyParams}{Parameters}
+{\em nowy\+\_\+rodzaj\+\_\+towaru} & określa rodzaj towaru \\
+\hline
+{\em nowa\+\_\+waga\+\_\+towaru\+\_\+w\+\_\+tonach} & określa wage towaru w tonach \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca żadnej wartości 
+\end{DoxyReturn}
+\mbox{\label{class_pociag_towarowy_a794490e9f983f873e8d075f35dc96325}} 
+\index{Pociag\+Towarowy@{Pociag\+Towarowy}!odczytaj@{odczytaj}}
+\index{odczytaj@{odczytaj}!Pociag\+Towarowy@{Pociag\+Towarowy}}
+\subsubsection{odczytaj()}
+{\footnotesize\ttfamily void Pociag\+Towarowy\+::odczytaj (\begin{DoxyParamCaption}\item[{\textbf{ Pociag\+Towarowy} \&}]{pociag }\end{DoxyParamCaption})}
+
+Funkcja wczytująca pociąg towarowy z pliku Jako parametr przyjmuje obiekt pociąg towarowy i wczytuje do niego informacje z pliku 
+\begin{DoxyParams}{Parameters}
+{\em pociag} & określa pociag towarowy do którego wczytujemy dane \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_pociag_towarowy_a5842dc6e39b23a6f6ca3c1f5edf36c6f}} 
+\index{Pociag\+Towarowy@{Pociag\+Towarowy}!wyswietl\+Dane@{wyswietl\+Dane}}
+\index{wyswietl\+Dane@{wyswietl\+Dane}!Pociag\+Towarowy@{Pociag\+Towarowy}}
+\subsubsection{wyswietl\+Dane()}
+{\footnotesize\ttfamily void Pociag\+Towarowy\+::wyswietl\+Dane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Funkcja wirtualna wyświetlająca dane pociągu towarowego. 
+
+
+
+Implements \textbf{ Pojazd} \doxyref{}{p.}{class_pojazd_a945485210fbea0be179644bd68863304}.
+
+\mbox{\label{class_pociag_towarowy_a30a1b2d5308f5cdafd07823bc07bccb4}} 
+\index{Pociag\+Towarowy@{Pociag\+Towarowy}!zapisz@{zapisz}}
+\index{zapisz@{zapisz}!Pociag\+Towarowy@{Pociag\+Towarowy}}
+\subsubsection{zapisz()}
+{\footnotesize\ttfamily void Pociag\+Towarowy\+::zapisz (\begin{DoxyParamCaption}\item[{\textbf{ Pociag\+Towarowy} \&}]{pociag }\end{DoxyParamCaption})}
+
+Funkcja zapisująca pociąg towarowy do pliku Jako parametr przyjmuje obiekt pociąg towarowy i zapisuje informacje o nim do pliku 
+\begin{DoxyParams}{Parameters}
+{\em pociag} & określa pociag towarowy który zapisujemy \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_pociag_towarowy_a25cee1a8b4b53a1e9b02f31672977e09}} 
+\index{Pociag\+Towarowy@{Pociag\+Towarowy}!zmien\+Kolor@{zmien\+Kolor}}
+\index{zmien\+Kolor@{zmien\+Kolor}!Pociag\+Towarowy@{Pociag\+Towarowy}}
+\subsubsection{zmien\+Kolor()}
+{\footnotesize\ttfamily void Pociag\+Towarowy\+::zmien\+Kolor (\begin{DoxyParamCaption}\item[{string}]{nowy\+\_\+kolor\+\_\+pociagu\+\_\+towarowego }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Funckcja wirtualna zmieniająca kolor pociągu towarowego. Jako parametr podawany jest nowy kolor pociągu towarowego /param nowy\+\_\+kolor określa kolor pociągu towarowego /return Funkcja nie zwraca żadnej wartości 
+
+Implements \textbf{ Pojazd} \doxyref{}{p.}{class_pojazd_a29cab7cc8f5b4b3faed884f0d2849f4f}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\label{class_pociag_towarowy_a46791b0f101793f7313aafa2eade03de}} 
+\index{Pociag\+Towarowy@{Pociag\+Towarowy}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Pociag\+Towarowy@{Pociag\+Towarowy}}
+\subsubsection{operator$<$$<$}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{s,  }\item[{\textbf{ Pociag\+Towarowy} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator strumieniowy $<$$<$. 
+
+\mbox{\label{class_pociag_towarowy_a4e728073e8406d3398d1b7c4afa2f0a2}} 
+\index{Pociag\+Towarowy@{Pociag\+Towarowy}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Pociag\+Towarowy@{Pociag\+Towarowy}}
+\subsubsection{operator$>$$>$}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{s,  }\item[{\textbf{ Pociag\+Towarowy} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator strumieniowy $>$$>$ 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Pociag towarowy.\+h}\item 
+\textbf{ Pociag towarowy.\+cpp}\end{DoxyCompactItemize}

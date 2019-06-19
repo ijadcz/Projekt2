@@ -1,0 +1,170 @@
+\section{Samochod Class Reference}
+\label{class_samochod}\index{Samochod@{Samochod}}
+
+
+Klasa \doxyref{Samochod}{p.}{class_samochod}, pochodna klasy \doxyref{Pojazd}{p.}{class_pojazd}.  
+
+
+
+
+{\ttfamily \#include $<$Samochód.\+h$>$}
+
+Inheritance diagram for Samochod\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_samochod}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Samochod} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Samochod} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+\textbf{ Samochod} (string n\+\_\+marka, string n\+\_\+typ\+\_\+samochodu, int n\+\_\+rok\+\_\+produkcji, string n\+\_\+kolor)
+\item 
+void \textbf{ wyswietl\+Dane} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wirtualna wyświetlająca dane samochodu. \end{DoxyCompactList}\item 
+void \textbf{ zmien\+Kolor} (string nowy\+\_\+kolor\+\_\+samochodu)
+\begin{DoxyCompactList}\small\item\em Funkcja wirtuaolna zmieniająca kolor samochodu. \end{DoxyCompactList}\item 
+void \textbf{ zapisz} (\textbf{ Samochod} \&samochod)
+\item 
+void \textbf{ wczytaj} (\textbf{ Samochod} \&samochod)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \textbf{ operator$<$$<$} (ostream \&s, \textbf{ Samochod} \&c)
+\begin{DoxyCompactList}\small\item\em Operator strumieniowy $<$$<$. \end{DoxyCompactList}\item 
+istream \& \textbf{ operator$>$$>$} (istream \&s, \textbf{ Samochod} \&c)
+\begin{DoxyCompactList}\small\item\em Operator strumieniowy $>$$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Klasa \doxyref{Samochod}{p.}{class_samochod}, pochodna klasy \doxyref{Pojazd}{p.}{class_pojazd}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_samochod_a56ae27a3e568333f010604249d463c96}} 
+\index{Samochod@{Samochod}!Samochod@{Samochod}}
+\index{Samochod@{Samochod}!Samochod@{Samochod}}
+\subsubsection{Samochod()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Samochod\+::\+Samochod (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyślny. 
+
+\mbox{\label{class_samochod_a5995c359256c60addb4b362c2797b37c}} 
+\index{Samochod@{Samochod}!````~Samochod@{$\sim$\+Samochod}}
+\index{````~Samochod@{$\sim$\+Samochod}!Samochod@{Samochod}}
+\subsubsection{$\sim$\+Samochod()}
+{\footnotesize\ttfamily Samochod\+::$\sim$\+Samochod (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor. 
+
+\mbox{\label{class_samochod_aff378f2f87df7f8d8562dddb37cb5cf4}} 
+\index{Samochod@{Samochod}!Samochod@{Samochod}}
+\index{Samochod@{Samochod}!Samochod@{Samochod}}
+\subsubsection{Samochod()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Samochod\+::\+Samochod (\begin{DoxyParamCaption}\item[{string}]{n\+\_\+marka,  }\item[{string}]{n\+\_\+typ\+\_\+samochodu,  }\item[{int}]{n\+\_\+rok\+\_\+produkcji,  }\item[{string}]{n\+\_\+kolor }\end{DoxyParamCaption})}
+
+Konstruktor Przyjmuje jako parametry marke, typ samochodu, rok produkcji i kolor 
+\begin{DoxyParams}{Parameters}
+{\em n\+\_\+marka} & określa markę samochodu \\
+\hline
+{\em n\+\_\+typ\+\_\+samochodu} & określa typ samochodu \\
+\hline
+{\em n\+\_\+rok\+\_\+produkcji} & określa rok produkcji samochodu \\
+\hline
+{\em n\+\_\+kolor} & określa kolor samochodu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Konstruktor nie zwraca żadnej wartości 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_samochod_a78ba738ef76bf9d1344a19dcee5c38bc}} 
+\index{Samochod@{Samochod}!wczytaj@{wczytaj}}
+\index{wczytaj@{wczytaj}!Samochod@{Samochod}}
+\subsubsection{wczytaj()}
+{\footnotesize\ttfamily void Samochod\+::wczytaj (\begin{DoxyParamCaption}\item[{\textbf{ Samochod} \&}]{samochod }\end{DoxyParamCaption})}
+
+Funkcja wczytująca obiekt z pliku Jako parametr przyjmuje obiekt samochod i wczytuje do niego informacje z pliku 
+\begin{DoxyParams}{Parameters}
+{\em pociag} & określa samochód do którego wczytujemy dane \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_samochod_a34b47cf70e5e6ed83be62f3ad8d3cd63}} 
+\index{Samochod@{Samochod}!wyswietl\+Dane@{wyswietl\+Dane}}
+\index{wyswietl\+Dane@{wyswietl\+Dane}!Samochod@{Samochod}}
+\subsubsection{wyswietl\+Dane()}
+{\footnotesize\ttfamily void Samochod\+::wyswietl\+Dane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Funkcja wirtualna wyświetlająca dane samochodu. 
+
+
+
+Implements \textbf{ Pojazd} \doxyref{}{p.}{class_pojazd_a945485210fbea0be179644bd68863304}.
+
+\mbox{\label{class_samochod_a73499649dc66eb93763a979cbe31f421}} 
+\index{Samochod@{Samochod}!zapisz@{zapisz}}
+\index{zapisz@{zapisz}!Samochod@{Samochod}}
+\subsubsection{zapisz()}
+{\footnotesize\ttfamily void Samochod\+::zapisz (\begin{DoxyParamCaption}\item[{\textbf{ Samochod} \&}]{samochod }\end{DoxyParamCaption})}
+
+Funkcja zapisująca samochód do pliku Jako parametr przyjmuje obiekt samochod i zapisuje informacje o nim do pliku 
+\begin{DoxyParams}{Parameters}
+{\em samochod} & określa pociag którego dane zapisujemy \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_samochod_ad06a48772ec0bfe426eecf0377a266bf}} 
+\index{Samochod@{Samochod}!zmien\+Kolor@{zmien\+Kolor}}
+\index{zmien\+Kolor@{zmien\+Kolor}!Samochod@{Samochod}}
+\subsubsection{zmien\+Kolor()}
+{\footnotesize\ttfamily void Samochod\+::zmien\+Kolor (\begin{DoxyParamCaption}\item[{string}]{nowy\+\_\+kolor\+\_\+samochodu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Funkcja wirtuaolna zmieniająca kolor samochodu. 
+
+
+
+Implements \textbf{ Pojazd} \doxyref{}{p.}{class_pojazd_a29cab7cc8f5b4b3faed884f0d2849f4f}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\label{class_samochod_a6c050739ef12b1dda9845e2d107c61ca}} 
+\index{Samochod@{Samochod}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Samochod@{Samochod}}
+\subsubsection{operator$<$$<$}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{s,  }\item[{\textbf{ Samochod} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator strumieniowy $<$$<$. 
+
+\mbox{\label{class_samochod_a6bf080449778fa75622f3e10731f414d}} 
+\index{Samochod@{Samochod}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Samochod@{Samochod}}
+\subsubsection{operator$>$$>$}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{s,  }\item[{\textbf{ Samochod} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator strumieniowy $>$$>$ 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Samochód.\+h}\item 
+\textbf{ Samochód.\+cpp}\end{DoxyCompactItemize}

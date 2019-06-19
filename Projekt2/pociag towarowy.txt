@@ -1,0 +1,15 @@
+Nazwa pociagu:  Posejdon
+Rok produkcji pociagu:  1997
+Liczba pracownikow:  1
+Liczba wagonow:  6
+Poczatek trasy:  Szczecin Glowny
+Koniec trasy:  Gdansk
+Dlugosc trasy:  354
+Czas przejazdu w minutach:  240
+
+Rodzaj towaru:  wegiel
+Waga towaru w tonach:  20
+Imie i Nazwisko pracownika:  Krzysztof Kowalski
+zawod:  maszynista
+zarobki:  2500
+

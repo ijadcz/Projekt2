@@ -1,0 +1,141 @@
+\section{Pracownik Class Reference}
+\label{class_pracownik}\index{Pracownik@{Pracownik}}
+
+
+Klasa \doxyref{Pracownik}{p.}{class_pracownik}, podklasa klasy \doxyref{Pociag}{p.}{class_pociag}.  
+
+
+
+
+{\ttfamily \#include $<$pracownik.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Pracownik} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Pracownik} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+void \textbf{ wypis\+Danych\+Pracownika} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wypisująca dane pracownika. \end{DoxyCompactList}\item 
+void \textbf{ dodaj\+Dane\+Pracownika} (string nowy\+\_\+imie\+\_\+nazwisko, string nowy\+\_\+zawod, int nowy\+\_\+zarobki)
+\item 
+void \textbf{ zapisz} (\textbf{ Pracownik} \&pracownicy)
+\item 
+void \textbf{ wczytaj} (\textbf{ Pracownik} \&pracownicy)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \textbf{ operator$<$$<$} (ostream \&s, \textbf{ Pracownik} \&p)
+\begin{DoxyCompactList}\small\item\em Operator strumieniowy $<$$<$. \end{DoxyCompactList}\item 
+istream \& \textbf{ operator$>$$>$} (istream \&s, \textbf{ Pracownik} \&p)
+\begin{DoxyCompactList}\small\item\em Operator strumieniowy $>$$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa \doxyref{Pracownik}{p.}{class_pracownik}, podklasa klasy \doxyref{Pociag}{p.}{class_pociag}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_pracownik_adae7e8f0ec1088ab80c4cbb3559cc628}} 
+\index{Pracownik@{Pracownik}!Pracownik@{Pracownik}}
+\index{Pracownik@{Pracownik}!Pracownik@{Pracownik}}
+\subsubsection{Pracownik()}
+{\footnotesize\ttfamily Pracownik\+::\+Pracownik (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyślny. 
+
+\mbox{\label{class_pracownik_a2e8aa510eda960582b0c28d1fbd376d3}} 
+\index{Pracownik@{Pracownik}!````~Pracownik@{$\sim$\+Pracownik}}
+\index{````~Pracownik@{$\sim$\+Pracownik}!Pracownik@{Pracownik}}
+\subsubsection{$\sim$\+Pracownik()}
+{\footnotesize\ttfamily Pracownik\+::$\sim$\+Pracownik (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_pracownik_a20664a92d253cd014aee538805a147c1}} 
+\index{Pracownik@{Pracownik}!dodaj\+Dane\+Pracownika@{dodaj\+Dane\+Pracownika}}
+\index{dodaj\+Dane\+Pracownika@{dodaj\+Dane\+Pracownika}!Pracownik@{Pracownik}}
+\subsubsection{dodaj\+Dane\+Pracownika()}
+{\footnotesize\ttfamily void Pracownik\+::dodaj\+Dane\+Pracownika (\begin{DoxyParamCaption}\item[{string}]{nowy\+\_\+imie\+\_\+nazwisko,  }\item[{string}]{nowy\+\_\+zawod,  }\item[{int}]{nowy\+\_\+zarobki }\end{DoxyParamCaption})}
+
+Procedura dodająca dane pracownika. Jako parametry przyjmuje imie i nazwisko pracownika, zawód i zarobki 
+\begin{DoxyParams}{Parameters}
+{\em nowy\+\_\+imie\+\_\+nazwisko} & określa imię i nazwisko pracownika \\
+\hline
+{\em nowy\+\_\+zawod} & określa zawód pracownika \\
+\hline
+{\em nowy\+\_\+zarobki} & określa zarobki pracownika \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja nie zwraca żadnej wartości 
+\end{DoxyReturn}
+\mbox{\label{class_pracownik_a41aa35381636e38a51d3dc0c095c521b}} 
+\index{Pracownik@{Pracownik}!wczytaj@{wczytaj}}
+\index{wczytaj@{wczytaj}!Pracownik@{Pracownik}}
+\subsubsection{wczytaj()}
+{\footnotesize\ttfamily void Pracownik\+::wczytaj (\begin{DoxyParamCaption}\item[{\textbf{ Pracownik} \&}]{pracownicy }\end{DoxyParamCaption})}
+
+Funkcja wczytujące dane z pliku pracownikom Jako parametr przyjmuje kontener zawierający pracowników i wczytuje im dane z pliku 
+\begin{DoxyParams}{Parameters}
+{\em pracownicy} & określa pracowników którym wczytujemy dane \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_pracownik_aea06aff33ba401709b83be10303e87c2}} 
+\index{Pracownik@{Pracownik}!wypis\+Danych\+Pracownika@{wypis\+Danych\+Pracownika}}
+\index{wypis\+Danych\+Pracownika@{wypis\+Danych\+Pracownika}!Pracownik@{Pracownik}}
+\subsubsection{wypis\+Danych\+Pracownika()}
+{\footnotesize\ttfamily void Pracownik\+::wypis\+Danych\+Pracownika (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja wypisująca dane pracownika. 
+
+\mbox{\label{class_pracownik_ad5a74efa1cadcf8dc6a2730141833a43}} 
+\index{Pracownik@{Pracownik}!zapisz@{zapisz}}
+\index{zapisz@{zapisz}!Pracownik@{Pracownik}}
+\subsubsection{zapisz()}
+{\footnotesize\ttfamily void Pracownik\+::zapisz (\begin{DoxyParamCaption}\item[{\textbf{ Pracownik} \&}]{pracownicy }\end{DoxyParamCaption})}
+
+Funkcja zapisująca dane pracownikó do pliku Jako parametr przyjmuje kontener zawierający pracowników i zapisuje informacje o nich do pliku 
+\begin{DoxyParams}{Parameters}
+{\em pracownicy} & określa pracowników których zapisujemy \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\label{class_pracownik_a178bdb8fdeb19bc53a50422983104895}} 
+\index{Pracownik@{Pracownik}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Pracownik@{Pracownik}}
+\subsubsection{operator$<$$<$}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{s,  }\item[{\textbf{ Pracownik} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator strumieniowy $<$$<$. 
+
+\mbox{\label{class_pracownik_a514d9af5b092da25ac1cf108d6cb9069}} 
+\index{Pracownik@{Pracownik}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Pracownik@{Pracownik}}
+\subsubsection{operator$>$$>$}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{s,  }\item[{\textbf{ Pracownik} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator strumieniowy $>$$>$ 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ pracownik.\+h}\item 
+\textbf{ pracownik.\+cpp}\end{DoxyCompactItemize}

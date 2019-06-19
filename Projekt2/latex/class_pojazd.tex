@@ -1,0 +1,175 @@
+\section{Pojazd Class Reference}
+\label{class_pojazd}\index{Pojazd@{Pojazd}}
+
+
+Klasa abstrakcyjna.  
+
+
+
+
+{\ttfamily \#include $<$Pojazd.\+h$>$}
+
+Inheritance diagram for Pojazd\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pojazd}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Pojazd} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny. \end{DoxyCompactList}\item 
+virtual \textbf{ $\sim$\+Pojazd} ()
+\begin{DoxyCompactList}\small\item\em Destruktor wirtualny. \end{DoxyCompactList}\item 
+virtual void \textbf{ wyswietl\+Dane} ()=0
+\begin{DoxyCompactList}\small\item\em Procedura wirtualna. \end{DoxyCompactList}\item 
+virtual void \textbf{ zmien\+Kolor} (string \textbf{ nowy\+\_\+kolor})=0
+\begin{DoxyCompactList}\small\item\em Procedura wirtualna. \end{DoxyCompactList}\item 
+virtual void \textbf{ zapisz} (\textbf{ Pojazd} \&pojazd)
+\begin{DoxyCompactList}\small\item\em Procedura wirtualna. \end{DoxyCompactList}\item 
+virtual void \textbf{ odczytaj} (\textbf{ Pojazd} \&pojazd)
+\begin{DoxyCompactList}\small\item\em Procedura wirtualna. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ rok\+\_\+produkcji}
+\begin{DoxyCompactList}\small\item\em określa rok produkcji pojazdu \end{DoxyCompactList}\item 
+string \textbf{ kolor}
+\begin{DoxyCompactList}\small\item\em określa kolor pojazdu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \textbf{ operator$<$$<$} (std\+::ostream \&s, \textbf{ Pojazd} \&p)
+\begin{DoxyCompactList}\small\item\em Operator strumieniowy $<$$<$. \end{DoxyCompactList}\item 
+std\+::istream \& \textbf{ operator$>$$>$} (std\+::istream \&s, \textbf{ Pojazd} \&p)
+\begin{DoxyCompactList}\small\item\em Operator strumieniowy $>$$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa abstrakcyjna. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_pojazd_adadab8f8cbb436d300d788314781a420}} 
+\index{Pojazd@{Pojazd}!Pojazd@{Pojazd}}
+\index{Pojazd@{Pojazd}!Pojazd@{Pojazd}}
+\subsubsection{Pojazd()}
+{\footnotesize\ttfamily Pojazd\+::\+Pojazd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyślny. 
+
+\mbox{\label{class_pojazd_a8fa527112445a2d598eff371f9f51039}} 
+\index{Pojazd@{Pojazd}!````~Pojazd@{$\sim$\+Pojazd}}
+\index{````~Pojazd@{$\sim$\+Pojazd}!Pojazd@{Pojazd}}
+\subsubsection{$\sim$\+Pojazd()}
+{\footnotesize\ttfamily Pojazd\+::$\sim$\+Pojazd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destruktor wirtualny. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_pojazd_ae527b4efc07951fc944e0c76f1db27ac}} 
+\index{Pojazd@{Pojazd}!odczytaj@{odczytaj}}
+\index{odczytaj@{odczytaj}!Pojazd@{Pojazd}}
+\subsubsection{odczytaj()}
+{\footnotesize\ttfamily void Pojazd\+::odczytaj (\begin{DoxyParamCaption}\item[{\textbf{ Pojazd} \&}]{pojazd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Procedura wirtualna. 
+
+\mbox{\label{class_pojazd_a945485210fbea0be179644bd68863304}} 
+\index{Pojazd@{Pojazd}!wyswietl\+Dane@{wyswietl\+Dane}}
+\index{wyswietl\+Dane@{wyswietl\+Dane}!Pojazd@{Pojazd}}
+\subsubsection{wyswietl\+Dane()}
+{\footnotesize\ttfamily virtual void Pojazd\+::wyswietl\+Dane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Procedura wirtualna. 
+
+
+
+Implemented in \textbf{ Pociag} \doxyref{}{p.}{class_pociag_a1096a05d2981c1da0ac50870d37c1ffb}, \textbf{ Samochod} \doxyref{}{p.}{class_samochod_a34b47cf70e5e6ed83be62f3ad8d3cd63}, and \textbf{ Pociag\+Towarowy} \doxyref{}{p.}{class_pociag_towarowy_a5842dc6e39b23a6f6ca3c1f5edf36c6f}.
+
+\mbox{\label{class_pojazd_af459a2afa32cbe2f54a74ec2f623c1fd}} 
+\index{Pojazd@{Pojazd}!zapisz@{zapisz}}
+\index{zapisz@{zapisz}!Pojazd@{Pojazd}}
+\subsubsection{zapisz()}
+{\footnotesize\ttfamily void Pojazd\+::zapisz (\begin{DoxyParamCaption}\item[{\textbf{ Pojazd} \&}]{pojazd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Procedura wirtualna. 
+
+\mbox{\label{class_pojazd_a29cab7cc8f5b4b3faed884f0d2849f4f}} 
+\index{Pojazd@{Pojazd}!zmien\+Kolor@{zmien\+Kolor}}
+\index{zmien\+Kolor@{zmien\+Kolor}!Pojazd@{Pojazd}}
+\subsubsection{zmien\+Kolor()}
+{\footnotesize\ttfamily virtual void Pojazd\+::zmien\+Kolor (\begin{DoxyParamCaption}\item[{string}]{nowy\+\_\+kolor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Procedura wirtualna. 
+
+
+
+Implemented in \textbf{ Pociag} \doxyref{}{p.}{class_pociag_a5645f7c8f4019124e63e41444b6893b4}, \textbf{ Samochod} \doxyref{}{p.}{class_samochod_ad06a48772ec0bfe426eecf0377a266bf}, and \textbf{ Pociag\+Towarowy} \doxyref{}{p.}{class_pociag_towarowy_a25cee1a8b4b53a1e9b02f31672977e09}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\label{class_pojazd_a3c3d50c9fa2eb85fabaf027bbaf2ffda}} 
+\index{Pojazd@{Pojazd}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Pojazd@{Pojazd}}
+\subsubsection{operator$<$$<$}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{s,  }\item[{\textbf{ Pojazd} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator strumieniowy $<$$<$. 
+
+\mbox{\label{class_pojazd_aa0fa6911e723f94e1326ef19bcde5cff}} 
+\index{Pojazd@{Pojazd}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Pojazd@{Pojazd}}
+\subsubsection{operator$>$$>$}
+{\footnotesize\ttfamily std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{s,  }\item[{\textbf{ Pojazd} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator strumieniowy $>$$>$ 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{class_pojazd_a5043f471a137e6dd705796d1293fcedf}} 
+\index{Pojazd@{Pojazd}!kolor@{kolor}}
+\index{kolor@{kolor}!Pojazd@{Pojazd}}
+\subsubsection{kolor}
+{\footnotesize\ttfamily string Pojazd\+::kolor\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+określa kolor pojazdu 
+
+\mbox{\label{class_pojazd_a2bb8c2ae5639b420fe97b32c21f45d61}} 
+\index{Pojazd@{Pojazd}!rok\+\_\+produkcji@{rok\+\_\+produkcji}}
+\index{rok\+\_\+produkcji@{rok\+\_\+produkcji}!Pojazd@{Pojazd}}
+\subsubsection{rok\+\_\+produkcji}
+{\footnotesize\ttfamily int Pojazd\+::rok\+\_\+produkcji\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+określa rok produkcji pojazdu 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Pojazd.\+h}\item 
+\textbf{ Pojazd.\+cpp}\end{DoxyCompactItemize}
